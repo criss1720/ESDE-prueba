@@ -15,13 +15,36 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #24292e;
-            background-color: #f6f8fa;
+            
+            /* Background SVG from your GitHub repo */
+            background-image: url('background.sgv');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            /* Optional: add overlay for better text readability */
+            position: relative;
+        }
+        
+        /* Optional dark overlay if tu background es muy claro */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85); /* Ajusta opacidad según necesites */
+            z-index: -1;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
+            position: relative;
+            z-index: 1;
         }
         
         header {
@@ -47,6 +70,7 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
+            z-index: 10;
         }
         
         nav ul {
@@ -93,6 +117,11 @@
             padding: 1rem;
             margin: 1rem 0;
             border-radius: 4px;
+            transition: transform 0.2s;
+        }
+        
+        .topic-card:hover {
+            transform: translateX(4px);
         }
         
         .topic-card h3 {
