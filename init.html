@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Learning Journey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            background-color: #f6f8fa;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: #24292e;
+        }
+        
+        main {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 2.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        section h2 {
+            color: #24292e;
+            border-bottom: 1px solid #e1e4e8;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .topic-card {
+            background-color: #f6f8fa;
+            border-left: 4px solid #0366d6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .topic-card h3 {
+            color: #0366d6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        
+        .status.in-progress {
+            background-color: #fff5b1;
+            color: #735c0f;
+        }
+        
+        .status.completed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #586069;
+            font-size: 0.9rem;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+        
+        .github-link:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My GitHub Learning Journey</h1>
+        <p>Documenting my path to mastering Git and open source collaboration</p>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#basics">Git Basics</a></li>
+            <li><a href="#github-features">GitHub Features</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#progress">Progress</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section id="basics">
+                <h2>📚 Git Fundamentals</h2>
+                <div class="topic-card">
+                    <h3>Repository Basics</h3>
+                    <p>Understanding init, clone, status, and the .git directory structure.</p>
+                    <span class="status completed">Completed</span>
+                </div>
+                <div class="topic-card">
+                    <h3>Commit Workflow</h3>
+                    <p>add, commit, log, show - Building project history effectively.</p>
+                    <span class="status in-progress">In Progress</span>
+                </div>
+            </section>
+
+            <section id="github-features">
+                <h2>🐙 GitHub Platform</h2>
+                <div class="topic-card">
+                    <h3>Pull Requests & Code Review</h3>
+                    <p>Collaborating through PRs, reviews, and merge strategies.</p>
+                    <span class="status in-progress">In Progress</span>
+                </div>
+                <div class="topic-card">
+                    <h3>GitHub Actions</h3>
+                    <p>Automating workflows and CI/CD pipelines.</p>
+                    <span class="status in-progress">In Progress</span>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>💻 My Projects</h2>
+                <p>Here are the free software projects I'm working on:</p>
+                <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li><strong>Project Alpha</strong> - A Python CLI tool (Coming Soon)</li>
+                    <li><strong>Learning Notes</strong> - This repository</li>
+                </ul>
+                <a href="https://github.com/yourusername" class="github-link">View My GitHub Profile</a>
+            </section>
+
+            <section id="resources">
+                <h2>🔗 Learning Resources</h2>
+                <ul style="margin-left: 1.5rem;">
+                    <li><a href="https://docs.github.com">GitHub Docs</a></li>
+                    <li><a href="https://git-scm.com/doc">Git Documentation</a></li>
+                    <li><a href="https://opensource.guide">Open Source Guides</a></li>
+                </ul>
+            </section>
+
+            <section id="progress">
+                <h2>📊 Progress Tracker</h2>
+                <p>This section could include a visual progress bar or checklist of completed topics.</p>
+                <!-- Add your progress visualization here -->
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 - Learning in Public | Built with ❤️ for the open source community</p>
+            <p>Feel free to open an issue or PR if you have suggestions!</p>
+        </footer>
+    </div>
+</body>
+</html>
